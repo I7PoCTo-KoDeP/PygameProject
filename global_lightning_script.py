@@ -31,9 +31,7 @@ def file_reader(path):
 
 
 vert_shader = file_reader('shaders/vertex.glsl')
-
 frag_shader = file_reader('shaders/fragment.glsl')
-
 
 program = ctx.program(vertex_shader=vert_shader, fragment_shader=frag_shader)
 render_object = ctx.vertex_array(program, [(quad_buffer, '2f 2f', 'vertexPos', 'vertexTexCoord')])
@@ -53,15 +51,16 @@ def render_tex(render_obj, surf):
 class ShadowCaster:
     @staticmethod
     def make_shadow(image, angle):
-        #shader = pygame_shaders.Shader('shaders/vertex.glsl','shaders/fragment.glsl', image)
+        # shader = pygame_shaders.Shader('shaders/vertex.glsl','shaders/fragment.glsl', image)
         image_res = pygame.Surface((image.get_height() * 2, image.get_width() * 2))
         image_res.blit(image, image.get_size())
         frame_tex = surf_to_texture(image_res)
         render_object.render(mode=moderngl.TRIANGLE_STRIP)
         frame_tex.use()
+        program['imageTexture'] = angle
 
         img = render_tex(render_object, image_res)
-        #img = shader.render()
+        # img = shader.render()
         img.set_colorkey((0, 0, 0))
 
         pattern = pygame.Surface(image_res.get_size())

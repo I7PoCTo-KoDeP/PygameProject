@@ -17,7 +17,7 @@ class Player(pygame.sprite.Sprite):
         self.rect.y += 1 * direction_y
 
     def cast_shadow(self):
-        self.shadow_caster.cast_shadow(self.rect.x, self.rect.y + 128)
+        self.shadow_caster.cast_shadow(self.rect.x, self.rect.y)
 
     def update(self):
-        self.shadow_caster.cast_shadow(self.rect.x, self.rect.y + 160)
+        self.shadow_caster.cast_shadow(self.rect.x - 160, self.rect.y + 160)
