@@ -81,6 +81,7 @@ if __name__ == '__main__':
     load_field(20, 20)
     block = Decoration('block', 99, 114)
     block1 = Decoration('block', 159, 144)
+    wall = Decoration('stone_wall', 259, 59)
     player = Player(100, 100)
 
     while running:
