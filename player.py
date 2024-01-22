@@ -1,7 +1,7 @@
 import pygame
 from sprites import player_group, all_sprites, player_image, shadow_casters
-from constants import SCALE
-from global_lightning_script import ShadowCaster
+from constants import SCALE, PLAYER_SPEED
+from global_lightning import ShadowCaster
 
 
 class Player(pygame.sprite.Sprite):
@@ -13,11 +13,8 @@ class Player(pygame.sprite.Sprite):
             self.shadow_caster = ShadowCaster(self.image)
 
     def move(self, direction_x, direction_y):
-        self.rect.x += 1 * direction_x
-        self.rect.y += 1 * direction_y
-
-    def cast_shadow(self):
-        self.shadow_caster.cast_shadow(self.rect.x, self.rect.y)
+        self.rect.x += PLAYER_SPEED * direction_x
+        self.rect.y += PLAYER_SPEED * direction_y
 
     def update(self):
-        self.shadow_caster.cast_shadow(self.rect.x - 160, self.rect.y + 160)
+        self.shadow_caster.cast_shadow(self.rect.x, self.rect.y)

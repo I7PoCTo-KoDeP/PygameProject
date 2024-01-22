@@ -1,9 +1,11 @@
 import pygame
-import pygame_shaders
+from opengl_render_pipeline import OpenGLRenderPipeline
 
 
-pygame.init()
 size = width, height = 320 * 4, 180 * 4
-
-screen = pygame.display.set_mode(size, pygame.OPENGL | pygame.DOUBLEBUF)
-display = pygame.Surface(size)
+pipeline = OpenGLRenderPipeline(size)
+screen = pipeline.get_screen()
+shadows_layer = pygame.Surface(size, pygame.SRCALPHA, 32)
+ground_layer = pygame.Surface(size, pygame.SRCALPHA, 32)
+decoration_layer = pygame.Surface(size, pygame.SRCALPHA, 32)
+sunshafts_layer = pygame.Surface(size, pygame.SRCALPHA, 32)

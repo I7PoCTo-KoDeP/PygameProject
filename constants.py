@@ -1,5 +1,9 @@
+import pygame
+
+
 SCALE = 2
 TILE_WIDTH = 68 * SCALE
 TILE_HEIGHT = 17 * SCALE
 X_OFFSET = 34 * SCALE
 FPS = 50
+PLAYER_SPEED = 2
