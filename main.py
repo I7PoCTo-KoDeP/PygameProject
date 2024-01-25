@@ -2,15 +2,17 @@ import pygame
 
 from opengl_render_pipeline import PostProcessing, Shader
 from initialization import screen, size, ground_layer, shadows_layer, sunshafts_layer
-from sprites import all_sprites, player_group, tiles_group, decorations
-from constants import X_OFFSET, FPS
+from sprites import all_sprites, tiles_group, sort_by_y
+from constants import X_OFFSET, FPS, PLAYER_START_SPEED, PLAYER_MAX_SPEED
 from player import Player
+from camera import Camera
 from global_lightning import SunShafts
 from scene_objects import Decoration, Tile
 
 
 sc_shader = PostProcessing(size, screen, 'shaders/vertex_screen_shader.glsl', 'shaders/fragment_screen_shader.glsl')
-sunshafts = SunShafts(100)
+sunshafts = SunShafts(100, (120, 120, 100), 100)
+camera = Camera()
 
 
 def load_field(rows, columns):
@@ -31,28 +33,29 @@ if __name__ == '__main__':
     running = True
     clock = pygame.time.Clock()
 
+    direction = [0, 0]
+    key_pressed = False
+
     load_field(20, 20)
-    wall = Decoration('stone_wall', 459, 59, True)
-    tree = Decoration('tree', 180, 170, True)
+    wall = Decoration('stone_wall', 180, 59, True)
+    tree = Decoration('tree', 10, 10, True)
     player = Player(100, 100)
 
     while running:
         sunshafts.render()
         screen.fill(pygame.Color('white'))
 
-        if pygame.key.get_pressed()[pygame.K_LEFT]:
-            player.move(-1, 0)
-        if pygame.key.get_pressed()[pygame.K_RIGHT]:
-            player.move(1, 0)
-        if pygame.key.get_pressed()[pygame.K_UP]:
-            player.move(0, -1)
-        if pygame.key.get_pressed()[pygame.K_DOWN]:
-            player.move(0, 1)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
             if event.type == pygame.KEYDOWN:
                 pass
+
+        player.move(PLAYER_MAX_SPEED, PLAYER_START_SPEED)
+
+        camera.update(player)
+        for sprite in all_sprites:
+            camera.apply(sprite)
 
         all_sprites.update()
 
@@ -62,11 +65,11 @@ if __name__ == '__main__':
         screen.blit(shadows_layer, (0, 0))
         shadows_layer.fill((1, 1, 1, 0))
 
-        #test = pygame.Surface(size)
-        #shader = Shader(screen, 'shaders/vertex_screen_shader.glsl', 'shaders/shadow_shader.glsl')
+        # test = pygame.Surface(size)
+        # shader = Shader(screen, 'shaders/vertex_screen_shader.glsl', 'shaders/shadow_shader.glsl')
 
-        player_group.draw(screen)
-        decorations.draw(screen)
+        sort_by_y.draw(screen)
+
 
         sc_shader.render()
 

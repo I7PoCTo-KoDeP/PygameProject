@@ -19,6 +19,15 @@ def load_image(name, colorkey=None):
     return image
 
 
+def clamp(min_value, max_value, value):
+    if min_value <= value <= max_value:
+        return value
+    elif min_value > value:
+        return min_value
+    else:
+        return max_value
+
+
 def terminate():
     pygame.quit()
     sys.exit()

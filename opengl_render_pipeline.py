@@ -4,11 +4,11 @@ import pygame
 
 
 class OpenGLRenderPipeline:
-    def __init__(self, screen_size):
+    def __init__(self, size, scale=1):
         pygame.init()
-        self.screen_size = screen_size
-        self.screen = pygame.display.set_mode(screen_size, pygame.OPENGL | pygame.DOUBLEBUF)
-        self.display = pygame.Surface(screen_size)
+        self.screen_size = size[0] * scale, size[1] * scale
+        self.screen = pygame.display.set_mode(self.screen_size, pygame.OPENGL | pygame.DOUBLEBUF)
+        self.display = pygame.Surface(size)
 
     def get_screen(self):
         return self.display
