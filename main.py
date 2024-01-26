@@ -12,7 +12,7 @@ from scene_objects import Decoration, Tile
 
 sc_shader = PostProcessing(size, screen, 'shaders/vertex_screen_shader.glsl', 'shaders/fragment_screen_shader.glsl')
 sunshafts = SunShafts(100, (120, 120, 100), 100)
-camera = Camera()
+camera = Camera(size, (0, 40))
 
 
 def load_field(rows, columns):
@@ -29,12 +29,15 @@ def load_field(rows, columns):
             tiles.append(tile)
 
 
+def clear_layer(layer):
+    layer.fill((255, 255, 255, 255))
+
+
 if __name__ == '__main__':
     running = True
     clock = pygame.time.Clock()
 
     direction = [0, 0]
-    key_pressed = False
 
     load_field(20, 20)
     wall = Decoration('stone_wall', 180, 59, True)
@@ -43,7 +46,7 @@ if __name__ == '__main__':
 
     while running:
         sunshafts.render()
-        screen.fill(pygame.Color('white'))
+        clear_layer(screen)
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -61,15 +64,16 @@ if __name__ == '__main__':
 
         tiles_group.draw(ground_layer)
         screen.blit(ground_layer, (0, 0))
-        screen.blit(sunshafts_layer, (0, 0))
+        #screen.blit(sunshafts_layer, (0, 0))
         screen.blit(shadows_layer, (0, 0))
         shadows_layer.fill((1, 1, 1, 0))
+
+        clear_layer(ground_layer)
 
         # test = pygame.Surface(size)
         # shader = Shader(screen, 'shaders/vertex_screen_shader.glsl', 'shaders/shadow_shader.glsl')
 
         sort_by_y.draw(screen)
-
 
         sc_shader.render()
 

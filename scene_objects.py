@@ -7,7 +7,7 @@ from global_lightning import ShadowCaster
 class Tile(pygame.sprite.Sprite):
     def __init__(self, tile_type, pos_x, pos_y, x_offset=0, y_offset=0, casts_shadows=False):
         super().__init__(tiles_group, all_sprites)
-        self.image = pygame.transform.scale(tile_images[tile_type], (80, 80))
+        self.image = tile_images[tile_type]
         self.rect = self.image.get_rect().move(TILE_WIDTH * pos_x + x_offset, TILE_HEIGHT * pos_y + y_offset)
 
 
