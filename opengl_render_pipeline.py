@@ -105,7 +105,7 @@ def surface_to_texture(ctx, surface):
     texture.swizzle = 'BGRA'
     texture.write(surface.get_view('1'))
     return texture
-
+  
 
 def file_reader(path):
     with open(path, mode='r', encoding='utf-8') as f:
