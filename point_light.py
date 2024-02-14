@@ -5,4 +5,5 @@ from initialization import screen
 
 
 class PointLight:
+    # TODO: point light, spot light
     pass

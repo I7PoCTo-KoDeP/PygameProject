@@ -3,6 +3,7 @@ from math import exp
 from sprites import player_group, all_sprites, player_image, shadow_casters, sort_by_y
 from global_lightning import ShadowCaster
 from help_functions import clamp
+from constants import GLOBAL_LIGHTNING_ANGLE
 
 
 class Player(pygame.sprite.Sprite):
@@ -14,7 +15,7 @@ class Player(pygame.sprite.Sprite):
         self.sprite_y = self.image.get_rect().bottom
         self.flipped = False
         if casts_shadows:
-            self.shadow_caster = ShadowCaster(self.image)
+            self.shadow_caster = ShadowCaster(self.image, GLOBAL_LIGHTNING_ANGLE)
 
     def flip(self, x_direction):
         if x_direction < 0 and not self.flipped:
@@ -42,15 +43,15 @@ class Player(pygame.sprite.Sprite):
 
     def get_direction(self):
         direction = [0, 0]
-        if pygame.key.get_pressed()[pygame.K_LEFT]:
+        if pygame.key.get_pressed()[pygame.K_LEFT] or pygame.key.get_pressed()[pygame.K_a]:
             direction[0] = -1
             self.flip(-1)
-        if pygame.key.get_pressed()[pygame.K_RIGHT]:
+        if pygame.key.get_pressed()[pygame.K_RIGHT] or pygame.key.get_pressed()[pygame.K_d]:
             direction[0] = 1
             self.flip(1)
-        if pygame.key.get_pressed()[pygame.K_UP]:
+        if pygame.key.get_pressed()[pygame.K_UP] or pygame.key.get_pressed()[pygame.K_w]:
             direction[1] = -1
-        if pygame.key.get_pressed()[pygame.K_DOWN]:
+        if pygame.key.get_pressed()[pygame.K_DOWN] or pygame.key.get_pressed()[pygame.K_s]:
             direction[1] = 1
         return direction
 

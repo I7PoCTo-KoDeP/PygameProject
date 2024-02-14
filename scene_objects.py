@@ -1,6 +1,6 @@
 import pygame
-from sprites import tiles_group, all_sprites, tile_images, decoration_images, decorations, sort_by_y
-from constants import TILE_WIDTH, TILE_HEIGHT
+from sprites import tiles_group, all_sprites, tile_images, decoration_images, decorations, sort_by_y, shadow_casters
+from constants import TILE_WIDTH, TILE_HEIGHT, GLOBAL_LIGHTNING_ANGLE
 from global_lightning import ShadowCaster
 
 
@@ -19,7 +19,8 @@ class Decoration(pygame.sprite.Sprite):
         self.casts_shadows = casts_shadows
         self.sprite_y = self.image.get_rect().bottom
         if casts_shadows:
-            self.shadow_caster = ShadowCaster(self.image)
+            self.shadow_caster = ShadowCaster(self.image, GLOBAL_LIGHTNING_ANGLE)
+            shadow_casters.add(self)
 
     def update(self):
         if self.casts_shadows:

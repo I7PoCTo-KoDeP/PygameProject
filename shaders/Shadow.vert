@@ -9,8 +9,7 @@ out vec2 fragmentTexCoord;
 void main()
 {
     vec2 new_vertexPos;
-    float angle;
-    angle = sin(in_angle);
+    float angle = sin(radians(in_angle));
     new_vertexPos.x = vertexPos.x + angle * (1.0 - vertexTexCoord.y);
     new_vertexPos.y = vertexPos.y + angle * (1.0 - vertexTexCoord.y);
     fragmentTexCoord = vertexTexCoord;
