@@ -1,6 +1,6 @@
 import pygame
 from math import exp
-from sprites import player_group, all_sprites, player_image, shadow_casters, sort_by_y
+from sprites import player_group, all_sprites, player_image, shadow_casters, sort_by_y, save_group
 from global_lightning import ShadowCaster
 from help_functions import clamp
 from constants import GLOBAL_LIGHTNING_ANGLE
@@ -8,12 +8,13 @@ from constants import GLOBAL_LIGHTNING_ANGLE
 
 class Player(pygame.sprite.Sprite):
     def __init__(self, pos_x, pos_y, casts_shadows=True):
-        super().__init__(player_group, all_sprites, shadow_casters, sort_by_y)
+        super().__init__(player_group, all_sprites, shadow_casters, sort_by_y, save_group)
         self.image = player_image
         self.rect = self.image.get_rect().move(pos_x, pos_y)
         self.current_speed = 0
         self.sprite_y = self.image.get_rect().bottom
         self.flipped = False
+        self.world_coordinates = [pos_x, pos_y]
         if casts_shadows:
             self.shadow_caster = ShadowCaster(self.image, GLOBAL_LIGHTNING_ANGLE)
 
@@ -32,7 +33,9 @@ class Player(pygame.sprite.Sprite):
             self.stop(acceleration)
         self.current_speed = self.calculate_speed(max_speed, 0.2, 2)
         self.rect.x += self.current_speed * direction_x
+        self.world_coordinates[0] += self.current_speed * direction_x
         self.rect.y += self.current_speed * direction_y
+        self.world_coordinates[1] += self.current_speed * direction_y
 
     def calculate_speed(self, max_speed, smoothness, exp_pow=1):
         speed = clamp(0, max_speed, self.current_speed * exp(exp_pow) * smoothness)
@@ -54,6 +57,9 @@ class Player(pygame.sprite.Sprite):
         if pygame.key.get_pressed()[pygame.K_DOWN] or pygame.key.get_pressed()[pygame.K_s]:
             direction[1] = 1
         return direction
+
+    def get_position(self):
+        return self.world_coordinates
 
     def update(self):
         self.shadow_caster.cast_shadow(self.rect.x, self.rect.y)

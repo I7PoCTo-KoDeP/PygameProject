@@ -1,6 +1,7 @@
 import pygame
 import os
 import sys
+import json
 
 
 def load_image(name, colorkey=None):
@@ -28,6 +29,27 @@ def clamp(min_value, max_value, value):
         return max_value
 
 
+def load_map(path):
+    with open(path, 'r', encoding='utf-8') as map_file:
+        objects = []
+        file = map_file.read()
+        data = json.loads(file)
+        for i in data:
+            for j in i:
+                obj = j['Class_name'] + '('
+                args = []
+                for key, val in j.items():
+                    if key != 'Class_name':
+                        args.append(key + '=' + str(val))
+                obj += ', '.join(i for i in args) + ')'
+                objects.append(obj)
+        return objects
+
+
 def terminate():
     pygame.quit()
     sys.exit()
+
+
+def clear_layer(layer):
+    layer.fill((255, 255, 255, 0))

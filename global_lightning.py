@@ -77,7 +77,7 @@ class GodRays:
             img = pygame.Surface((image_width, image_height), pygame.SRCALPHA)
             img.blit(i.image, (0, 0))
             offset = self.find_last_pixel(i.image) / image_width
-            print(offset)
+            #print(offset)
             depth_shader = Shader('shaders/DepthMap.vert', 'shaders/DepthMap.frag', img, data={'offset': offset})
             self.shaders.append(depth_shader)
 
