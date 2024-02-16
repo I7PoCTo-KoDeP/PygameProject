@@ -9,6 +9,7 @@ from camera import Camera
 from global_lightning import GodRays
 from save_module import save, load_save
 from help_functions import clear_layer, load_map
+from menus import MainMenu
 from scene_objects import Tile, Decoration
 
 
@@ -21,6 +22,8 @@ time = 0
 if __name__ == '__main__':
     running = True
     clock = pygame.time.Clock()
+
+    main_menu = MainMenu(clock)
 
     objects = load_map('maps/game_map.json')
     for i in objects:
@@ -46,6 +49,7 @@ if __name__ == '__main__':
             if event.type == pygame.KEYDOWN:
                 if pygame.key.get_pressed()[pygame.K_ESCAPE]:
                     save(save_group)
+                    main_menu = MainMenu(clock)
 
         player.move(PLAYER_MAX_SPEED, PLAYER_START_SPEED)
 
@@ -61,14 +65,14 @@ if __name__ == '__main__':
         screen.blit(ground_layer, (0, 0))
         screen.blit(shadows_layer, (0, 0))
         screen.blit(objects_layer, (0, 0))
-        #god_rays.render_depth_map(shadow_casters)
-        #screen.blit(god_rays.depth_map, (0, 0))
+        # god_rays.render_depth_map(shadow_casters)
+        # screen.blit(god_rays.depth_map, (0, 0))
 
         # Post-Processing
-        #shader_data = {'TIME': time}
-        #god_rays.send_data_to_shader(shader_data)
-        #god_rays.render()
-        #screen.blit(sunshafts_layer, (0, 0))
+        # shader_data = {'TIME': time}
+        # god_rays.send_data_to_shader(shader_data)
+        # god_rays.render()
+        # screen.blit(sunshafts_layer, (0, 0))
 
         # Clearing
         clear_layer(ground_layer)

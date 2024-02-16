@@ -26,6 +26,7 @@ class Decoration(pygame.sprite.Sprite):
         self.image = decoration_images[image_id]
         self.rect = self.image.get_rect().move(pos_x, pos_y)
         self.sprite_y = self.image.get_rect().bottom
+        self.mask = pygame.mask.from_surface(self.image)
         if casts_shadows:
             self.shadow_caster = ShadowCaster(self.image, GLOBAL_LIGHTNING_ANGLE)
             shadow_casters.add(self)

@@ -1,6 +1,6 @@
 import pygame
 from math import exp
-from sprites import player_group, all_sprites, player_image, shadow_casters, sort_by_y, save_group
+from sprites import player_group, all_sprites, player_image, shadow_casters, sort_by_y, save_group, decorations
 from global_lightning import ShadowCaster
 from help_functions import clamp
 from constants import GLOBAL_LIGHTNING_ANGLE
@@ -36,6 +36,12 @@ class Player(pygame.sprite.Sprite):
         self.world_coordinates[0] += self.current_speed * direction_x
         self.rect.y += self.current_speed * direction_y
         self.world_coordinates[1] += self.current_speed * direction_y
+        for i in decorations:
+            if pygame.sprite.collide_mask(self, i):
+                self.rect.x -= self.current_speed * direction_x
+                self.world_coordinates[0] -= self.current_speed * direction_x
+                self.rect.y -= self.current_speed * direction_y
+                self.world_coordinates[1] -= self.current_speed * direction_y
 
     def calculate_speed(self, max_speed, smoothness, exp_pow=1):
         speed = clamp(0, max_speed, self.current_speed * exp(exp_pow) * smoothness)

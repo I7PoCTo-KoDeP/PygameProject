@@ -2,8 +2,9 @@ import pygame
 from opengl_render_pipeline import OpenGLRenderPipeline
 
 
+scale = 2
 size = width, height = 640, 360
-pipeline = OpenGLRenderPipeline(size, scale=2)
+pipeline = OpenGLRenderPipeline(size, scale=scale)
 screen = pipeline.get_screen()
 shadows_layer = pygame.Surface(size, pygame.SRCALPHA, 32)
 ground_layer = pygame.Surface(size, pygame.SRCALPHA, 32)
