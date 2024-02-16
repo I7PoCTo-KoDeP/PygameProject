@@ -2,7 +2,7 @@ import pygame
 
 from opengl_render_pipeline import PostProcessing
 from initialization import screen, size, ground_layer, shadows_layer, sunshafts_layer, objects_layer
-from sprites import all_sprites, tiles_group, sort_by_y, shadow_casters, save_group
+from sprites import all_sprites, tiles_group, sort_by_y, shadow_casters, save_group, non_player
 from constants import *
 from player import Player
 from camera import Camera
@@ -15,7 +15,7 @@ from scene_objects import Tile, Decoration
 
 sc_shader = PostProcessing(size, screen, 'shaders/Screen.vert', 'shaders/Screen.frag')
 god_rays = GodRays(GLOBAL_LIGHTNING_ANGLE, (120, 120, 100), 100)
-camera = Camera(size, (0, 40))
+camera = Camera(size, 0.2)
 time = 0
 
 
@@ -23,7 +23,7 @@ if __name__ == '__main__':
     running = True
     clock = pygame.time.Clock()
 
-    main_menu = MainMenu(clock)
+    main_menu = MainMenu(clock, True)
 
     objects = load_map('maps/game_map.json')
     for i in objects:
@@ -49,7 +49,7 @@ if __name__ == '__main__':
             if event.type == pygame.KEYDOWN:
                 if pygame.key.get_pressed()[pygame.K_ESCAPE]:
                     save(save_group)
-                    main_menu = MainMenu(clock)
+                    main_menu = MainMenu(clock, False)
 
         player.move(PLAYER_MAX_SPEED, PLAYER_START_SPEED)
 

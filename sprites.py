@@ -21,6 +21,7 @@ player_group = pygame.sprite.Group()
 shadow_casters = pygame.sprite.Group()
 decorations = pygame.sprite.Group()
 save_group = pygame.sprite.Group()
+non_player = pygame.sprite.Group()
 
 tile_images = {
     0: load_image('tile2.png'),
