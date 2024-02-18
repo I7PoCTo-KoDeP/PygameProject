@@ -1,0 +1,3548 @@
+[
+  [
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": -1,
+      "pos_y": -1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": -1,
+      "pos_y": 0,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": -1,
+      "pos_y": 1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": -1,
+      "pos_y": 2,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": -1,
+      "pos_y": 3,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": -1,
+      "pos_y": 4,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": -1,
+      "pos_y": 5,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": -1,
+      "pos_y": 6,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": -1,
+      "pos_y": 7,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": -1,
+      "pos_y": 8,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": -1,
+      "pos_y": 9,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": -1,
+      "pos_y": 10,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": -1,
+      "pos_y": 11,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": -1,
+      "pos_y": 12,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": -1,
+      "pos_y": 13,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": -1,
+      "pos_y": 14,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": -1,
+      "pos_y": 15,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": -1,
+      "pos_y": 16,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": -1,
+      "pos_y": 17,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": -1,
+      "pos_y": 18,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": -1,
+      "pos_y": 19,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 0,
+      "pos_y": -1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 0,
+      "pos_y": 0,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 0,
+      "pos_y": 1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 0,
+      "pos_y": 2,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 0,
+      "pos_y": 3,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 0,
+      "pos_y": 4,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 0,
+      "pos_y": 5,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 0,
+      "pos_y": 6,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 0,
+      "pos_y": 7,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 0,
+      "pos_y": 8,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 0,
+      "pos_y": 9,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 0,
+      "pos_y": 10,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 0,
+      "pos_y": 11,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 0,
+      "pos_y": 12,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 0,
+      "pos_y": 13,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 0,
+      "pos_y": 14,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 0,
+      "pos_y": 15,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 0,
+      "pos_y": 16,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 0,
+      "pos_y": 17,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 0,
+      "pos_y": 18,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 0,
+      "pos_y": 19,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 1,
+      "pos_y": -1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 1,
+      "pos_y": 0,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 1,
+      "pos_y": 1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 1,
+      "pos_y": 2,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 1,
+      "pos_y": 3,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 1,
+      "pos_y": 4,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 1,
+      "pos_y": 5,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 1,
+      "pos_y": 6,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 1,
+      "pos_y": 7,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 1,
+      "pos_y": 8,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 1,
+      "pos_y": 9,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 1,
+      "pos_y": 10,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 1,
+      "pos_y": 11,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 1,
+      "pos_y": 12,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 1,
+      "pos_y": 13,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 1,
+      "pos_y": 14,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 1,
+      "pos_y": 15,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 1,
+      "pos_y": 16,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 1,
+      "pos_y": 17,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 1,
+      "pos_y": 18,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 1,
+      "pos_y": 19,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 2,
+      "pos_y": -1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 2,
+      "pos_y": 0,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 2,
+      "pos_y": 1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 2,
+      "pos_y": 2,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 2,
+      "pos_y": 3,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 2,
+      "pos_y": 4,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 2,
+      "pos_y": 5,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 2,
+      "pos_y": 6,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 2,
+      "pos_y": 7,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 2,
+      "pos_y": 8,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 2,
+      "pos_y": 9,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 2,
+      "pos_y": 10,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 2,
+      "pos_y": 11,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 2,
+      "pos_y": 12,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 2,
+      "pos_y": 13,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 2,
+      "pos_y": 14,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 2,
+      "pos_y": 15,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 2,
+      "pos_y": 16,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 2,
+      "pos_y": 17,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 2,
+      "pos_y": 18,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 2,
+      "pos_y": 19,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 3,
+      "pos_y": -1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 3,
+      "pos_y": 0,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 3,
+      "pos_y": 1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 3,
+      "pos_y": 2,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 3,
+      "pos_y": 3,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 3,
+      "pos_y": 4,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 3,
+      "pos_y": 5,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 3,
+      "pos_y": 6,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 3,
+      "pos_y": 7,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 3,
+      "pos_y": 8,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 3,
+      "pos_y": 9,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 3,
+      "pos_y": 10,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 3,
+      "pos_y": 11,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 3,
+      "pos_y": 12,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 3,
+      "pos_y": 13,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 3,
+      "pos_y": 14,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 3,
+      "pos_y": 15,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 3,
+      "pos_y": 16,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 3,
+      "pos_y": 17,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 3,
+      "pos_y": 18,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 3,
+      "pos_y": 19,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 4,
+      "pos_y": -1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 4,
+      "pos_y": 0,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 4,
+      "pos_y": 1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 4,
+      "pos_y": 2,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 4,
+      "pos_y": 3,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 4,
+      "pos_y": 4,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 4,
+      "pos_y": 5,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 4,
+      "pos_y": 6,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 4,
+      "pos_y": 7,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 4,
+      "pos_y": 8,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 4,
+      "pos_y": 9,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 4,
+      "pos_y": 10,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 4,
+      "pos_y": 11,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 4,
+      "pos_y": 12,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 4,
+      "pos_y": 13,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 4,
+      "pos_y": 14,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 4,
+      "pos_y": 15,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 4,
+      "pos_y": 16,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 4,
+      "pos_y": 17,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 4,
+      "pos_y": 18,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 4,
+      "pos_y": 19,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 5,
+      "pos_y": -1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 5,
+      "pos_y": 0,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 5,
+      "pos_y": 1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 5,
+      "pos_y": 2,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 5,
+      "pos_y": 3,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 5,
+      "pos_y": 4,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 5,
+      "pos_y": 5,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 5,
+      "pos_y": 6,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 5,
+      "pos_y": 7,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 5,
+      "pos_y": 8,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 5,
+      "pos_y": 9,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 5,
+      "pos_y": 10,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 5,
+      "pos_y": 11,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 5,
+      "pos_y": 12,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 5,
+      "pos_y": 13,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 5,
+      "pos_y": 14,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 5,
+      "pos_y": 15,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 5,
+      "pos_y": 16,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 5,
+      "pos_y": 17,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 5,
+      "pos_y": 18,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 5,
+      "pos_y": 19,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 6,
+      "pos_y": -1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 6,
+      "pos_y": 0,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 6,
+      "pos_y": 1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 6,
+      "pos_y": 2,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 6,
+      "pos_y": 3,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 6,
+      "pos_y": 4,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 6,
+      "pos_y": 5,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 6,
+      "pos_y": 6,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 6,
+      "pos_y": 7,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 6,
+      "pos_y": 8,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 6,
+      "pos_y": 9,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 6,
+      "pos_y": 10,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 6,
+      "pos_y": 11,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 6,
+      "pos_y": 12,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 6,
+      "pos_y": 13,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 6,
+      "pos_y": 14,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 6,
+      "pos_y": 15,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 6,
+      "pos_y": 16,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 6,
+      "pos_y": 17,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 6,
+      "pos_y": 18,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 6,
+      "pos_y": 19,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 7,
+      "pos_y": -1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 7,
+      "pos_y": 0,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 7,
+      "pos_y": 1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 7,
+      "pos_y": 2,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 7,
+      "pos_y": 3,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 7,
+      "pos_y": 4,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 7,
+      "pos_y": 5,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 7,
+      "pos_y": 6,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 7,
+      "pos_y": 7,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 7,
+      "pos_y": 8,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 7,
+      "pos_y": 9,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 7,
+      "pos_y": 10,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 7,
+      "pos_y": 11,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 7,
+      "pos_y": 12,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 7,
+      "pos_y": 13,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 7,
+      "pos_y": 14,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 7,
+      "pos_y": 15,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 7,
+      "pos_y": 16,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 7,
+      "pos_y": 17,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 7,
+      "pos_y": 18,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 7,
+      "pos_y": 19,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 8,
+      "pos_y": -1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 8,
+      "pos_y": 0,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 8,
+      "pos_y": 1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 8,
+      "pos_y": 2,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 8,
+      "pos_y": 3,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 8,
+      "pos_y": 4,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 8,
+      "pos_y": 5,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 8,
+      "pos_y": 6,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 8,
+      "pos_y": 7,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 8,
+      "pos_y": 8,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 8,
+      "pos_y": 9,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 8,
+      "pos_y": 10,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 8,
+      "pos_y": 11,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 8,
+      "pos_y": 12,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 8,
+      "pos_y": 13,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 8,
+      "pos_y": 14,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 8,
+      "pos_y": 15,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 8,
+      "pos_y": 16,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 8,
+      "pos_y": 17,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 8,
+      "pos_y": 18,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 8,
+      "pos_y": 19,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 9,
+      "pos_y": -1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 9,
+      "pos_y": 0,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 9,
+      "pos_y": 1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 9,
+      "pos_y": 2,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 9,
+      "pos_y": 3,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 9,
+      "pos_y": 4,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 9,
+      "pos_y": 5,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 9,
+      "pos_y": 6,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 9,
+      "pos_y": 7,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 9,
+      "pos_y": 8,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 9,
+      "pos_y": 9,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 9,
+      "pos_y": 10,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 9,
+      "pos_y": 11,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 9,
+      "pos_y": 12,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 9,
+      "pos_y": 13,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 9,
+      "pos_y": 14,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 9,
+      "pos_y": 15,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 9,
+      "pos_y": 16,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 9,
+      "pos_y": 17,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 9,
+      "pos_y": 18,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 9,
+      "pos_y": 19,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 10,
+      "pos_y": -1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 10,
+      "pos_y": 0,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 10,
+      "pos_y": 1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 10,
+      "pos_y": 2,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 10,
+      "pos_y": 3,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 10,
+      "pos_y": 4,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 10,
+      "pos_y": 5,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 10,
+      "pos_y": 6,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 10,
+      "pos_y": 7,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 10,
+      "pos_y": 8,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 10,
+      "pos_y": 9,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 10,
+      "pos_y": 10,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 10,
+      "pos_y": 11,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 10,
+      "pos_y": 12,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 10,
+      "pos_y": 13,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 10,
+      "pos_y": 14,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 10,
+      "pos_y": 15,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 10,
+      "pos_y": 16,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 10,
+      "pos_y": 17,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 10,
+      "pos_y": 18,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 10,
+      "pos_y": 19,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 11,
+      "pos_y": -1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 11,
+      "pos_y": 0,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 11,
+      "pos_y": 1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 11,
+      "pos_y": 2,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 11,
+      "pos_y": 3,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 11,
+      "pos_y": 4,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 11,
+      "pos_y": 5,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 11,
+      "pos_y": 6,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 11,
+      "pos_y": 7,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 11,
+      "pos_y": 8,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 11,
+      "pos_y": 9,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 11,
+      "pos_y": 10,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 11,
+      "pos_y": 11,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 11,
+      "pos_y": 12,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 11,
+      "pos_y": 13,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 11,
+      "pos_y": 14,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 11,
+      "pos_y": 15,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 11,
+      "pos_y": 16,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 11,
+      "pos_y": 17,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 11,
+      "pos_y": 18,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 11,
+      "pos_y": 19,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 12,
+      "pos_y": -1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 12,
+      "pos_y": 0,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 12,
+      "pos_y": 1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 12,
+      "pos_y": 2,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 12,
+      "pos_y": 3,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 12,
+      "pos_y": 4,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 12,
+      "pos_y": 5,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 12,
+      "pos_y": 6,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 12,
+      "pos_y": 7,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 12,
+      "pos_y": 8,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 12,
+      "pos_y": 9,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 12,
+      "pos_y": 10,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 12,
+      "pos_y": 11,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 12,
+      "pos_y": 12,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 12,
+      "pos_y": 13,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 12,
+      "pos_y": 14,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 12,
+      "pos_y": 15,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 12,
+      "pos_y": 16,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 12,
+      "pos_y": 17,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 12,
+      "pos_y": 18,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 12,
+      "pos_y": 19,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 13,
+      "pos_y": -1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 13,
+      "pos_y": 0,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 13,
+      "pos_y": 1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 13,
+      "pos_y": 2,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 13,
+      "pos_y": 3,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 13,
+      "pos_y": 4,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 13,
+      "pos_y": 5,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 13,
+      "pos_y": 6,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 13,
+      "pos_y": 7,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 13,
+      "pos_y": 8,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 13,
+      "pos_y": 9,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 13,
+      "pos_y": 10,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 13,
+      "pos_y": 11,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 13,
+      "pos_y": 12,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 13,
+      "pos_y": 13,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 13,
+      "pos_y": 14,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 13,
+      "pos_y": 15,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 13,
+      "pos_y": 16,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 13,
+      "pos_y": 17,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 13,
+      "pos_y": 18,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 13,
+      "pos_y": 19,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 14,
+      "pos_y": -1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 14,
+      "pos_y": 0,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 14,
+      "pos_y": 1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 14,
+      "pos_y": 2,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 14,
+      "pos_y": 3,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 14,
+      "pos_y": 4,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 14,
+      "pos_y": 5,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 14,
+      "pos_y": 6,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 14,
+      "pos_y": 7,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 14,
+      "pos_y": 8,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 14,
+      "pos_y": 9,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 14,
+      "pos_y": 10,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 14,
+      "pos_y": 11,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 14,
+      "pos_y": 12,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 14,
+      "pos_y": 13,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 14,
+      "pos_y": 14,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 14,
+      "pos_y": 15,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 14,
+      "pos_y": 16,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 14,
+      "pos_y": 17,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 14,
+      "pos_y": 18,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 14,
+      "pos_y": 19,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 15,
+      "pos_y": -1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 15,
+      "pos_y": 0,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 15,
+      "pos_y": 1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 15,
+      "pos_y": 2,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 15,
+      "pos_y": 3,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 15,
+      "pos_y": 4,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 15,
+      "pos_y": 5,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 15,
+      "pos_y": 6,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 15,
+      "pos_y": 7,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 15,
+      "pos_y": 8,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 15,
+      "pos_y": 9,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 15,
+      "pos_y": 10,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 15,
+      "pos_y": 11,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 15,
+      "pos_y": 12,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 15,
+      "pos_y": 13,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 15,
+      "pos_y": 14,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 15,
+      "pos_y": 15,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 15,
+      "pos_y": 16,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 15,
+      "pos_y": 17,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 15,
+      "pos_y": 18,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 15,
+      "pos_y": 19,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 16,
+      "pos_y": -1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 16,
+      "pos_y": 0,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 16,
+      "pos_y": 1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 16,
+      "pos_y": 2,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 16,
+      "pos_y": 3,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 16,
+      "pos_y": 4,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 16,
+      "pos_y": 5,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 16,
+      "pos_y": 6,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 16,
+      "pos_y": 7,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 16,
+      "pos_y": 8,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 16,
+      "pos_y": 9,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 16,
+      "pos_y": 10,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 16,
+      "pos_y": 11,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 16,
+      "pos_y": 12,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 16,
+      "pos_y": 13,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 16,
+      "pos_y": 14,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 16,
+      "pos_y": 15,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 16,
+      "pos_y": 16,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 16,
+      "pos_y": 17,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 16,
+      "pos_y": 18,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 16,
+      "pos_y": 19,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 17,
+      "pos_y": -1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 17,
+      "pos_y": 0,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 17,
+      "pos_y": 1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 17,
+      "pos_y": 2,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 17,
+      "pos_y": 3,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 17,
+      "pos_y": 4,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 17,
+      "pos_y": 5,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 17,
+      "pos_y": 6,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 17,
+      "pos_y": 7,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 17,
+      "pos_y": 8,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 17,
+      "pos_y": 9,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 17,
+      "pos_y": 10,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 17,
+      "pos_y": 11,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 17,
+      "pos_y": 12,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 17,
+      "pos_y": 13,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 17,
+      "pos_y": 14,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 17,
+      "pos_y": 15,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 17,
+      "pos_y": 16,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 17,
+      "pos_y": 17,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 17,
+      "pos_y": 18,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 17,
+      "pos_y": 19,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 18,
+      "pos_y": -1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 18,
+      "pos_y": 0,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 18,
+      "pos_y": 1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 18,
+      "pos_y": 2,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 18,
+      "pos_y": 3,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 18,
+      "pos_y": 4,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 18,
+      "pos_y": 5,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 18,
+      "pos_y": 6,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 18,
+      "pos_y": 7,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 18,
+      "pos_y": 8,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 18,
+      "pos_y": 9,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 18,
+      "pos_y": 10,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 18,
+      "pos_y": 11,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 18,
+      "pos_y": 12,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 18,
+      "pos_y": 13,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 18,
+      "pos_y": 14,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 18,
+      "pos_y": 15,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 18,
+      "pos_y": 16,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 18,
+      "pos_y": 17,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 18,
+      "pos_y": 18,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 18,
+      "pos_y": 19,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 19,
+      "pos_y": -1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 19,
+      "pos_y": 0,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 19,
+      "pos_y": 1,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 19,
+      "pos_y": 2,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 19,
+      "pos_y": 3,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 19,
+      "pos_y": 4,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 19,
+      "pos_y": 5,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 19,
+      "pos_y": 6,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 19,
+      "pos_y": 7,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 19,
+      "pos_y": 8,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 19,
+      "pos_y": 9,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 19,
+      "pos_y": 10,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 19,
+      "pos_y": 11,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 19,
+      "pos_y": 12,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 19,
+      "pos_y": 13,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 19,
+      "pos_y": 14,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 19,
+      "pos_y": 15,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 19,
+      "pos_y": 16,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 19,
+      "pos_y": 17,
+      "x_offset": 0,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "white",
+      "pos_x": 19,
+      "pos_y": 18,
+      "x_offset": 34,
+      "y_offset": 0
+    },
+    {
+      "Class_name": "Tile",
+      "image_id": "black",
+      "pos_x": 19,
+      "pos_y": 19,
+      "x_offset": 0,
+      "y_offset": 0
+    }
+  ],
+  [
+    {
+      "Class_name": "Decoration",
+      "image_id": "stone_wall",
+      "pos_x": 180,
+      "pos_y": 59,
+      "casts_shadows": true
+    },
+    {
+      "Class_name": "Decoration",
+      "image_id": "tree",
+      "pos_x": 10,
+      "pos_y": 10,
+      "casts_shadows": true
+    }
+  ]
+]

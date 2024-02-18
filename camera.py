@@ -1,14 +1,19 @@
+from pygame.math import Vector2
+
+
 class Camera:
-    def __init__(self, screen_size, offset):
-        self.dx = 0
-        self.dy = 0
+    def __init__(self, screen_size, speed):
+        self.position = Vector2(screen_size[0] // 2, screen_size[1] // 2)
         self.screen_size = screen_size
-        self.offset = offset
+        self.speed = speed
+        self.offset = Vector2(0, 0)
 
     def apply(self, obj):
-        obj.rect.x += self.dx
-        obj.rect.y += self.dy
+        obj.rect.x += self.offset.x
+        obj.rect.y += self.offset.y
 
     def update(self, target):
-        self.dx = -(target.rect.x + target.rect.w // 2 - self.screen_size[0] // 2 + self.offset[0])
-        self.dy = -(target.rect.y + target.rect.h // 2 - self.screen_size[1] // 2 + self.offset[1])
+        heading = target.position - self.position
+        self.position += heading * self.speed
+        self.offset = (Vector2(self.screen_size[0] / 2, self.screen_size[1] / 2) - self.position) * self.speed
+
