@@ -60,11 +60,6 @@ class GodRays:
                         data={'TIME': 0})
         self.rays = shader.render()
         self.rays_shaders = shader
-        '''for _ in objects:
-            img = pygame.Surface((size[0], size[1]))
-            #shader = Shader('shaders/GodRays.vert', 'shaders/GodRays.frag', sprite=img, data={'TIME': 0})
-            shader = Shader('shaders/Default.vert', 'shaders/Default.frag', sprite=img)
-            self.shaders.append(shader)'''
         self.obj = objects
 
     def send_data_to_shader(self, data):
@@ -77,7 +72,6 @@ class GodRays:
             img = pygame.Surface((image_width, image_height), pygame.SRCALPHA)
             img.blit(i.image, (0, 0))
             offset = self.find_last_pixel(i.image) / image_width
-            #print(offset)
             depth_shader = Shader('shaders/DepthMap.vert', 'shaders/DepthMap.frag', img, data={'offset': offset})
             self.shaders.append(depth_shader)
 
@@ -97,17 +91,4 @@ class GodRays:
         sunshafts_layer.fill((0, 0, 0, 0))
 
         self.render_depth_map(self.obj)
-        '''for i in self.obj:
-            self.depth_map.blit(i.image, (i.rect.x, i.rect.y))
-        rays = [shader.render() for shader in self.rays_shaders]
-        coords = [i.rect for i in self.obj]
-        for obj, shader in zip(self.obj, self.shaders):
-            shader.blit_image(obj.image, obj.rect)
-        images = [shader.render() for shader in self.shaders]
-        for image, coord in zip(images, coords):
-            for i in rays:
-                image.blit(i, (coord[0], 0))
-            image.set_colorkey((0, 0, 0))
-            sunshafts_layer.blit(image, (0, 0))
-        for img, coord in zip(rays, coords):'''
         sunshafts_layer.blit(self.rays_shaders.render(create_texture=True), (0, 0))

@@ -1,13 +1,12 @@
 import pygame
-from sprites import (tiles_group, all_sprites, tile_images, decoration_images, decorations, sort_by_y, shadow_casters,
-                     non_player)
+from sprites import tiles_group, all_sprites, tile_images, decoration_images, decorations, sort_by_y, shadow_casters
 from constants import TILE_WIDTH, TILE_HEIGHT, GLOBAL_LIGHTNING_ANGLE
 from global_lightning import ShadowCaster
 
 
 class Tile(pygame.sprite.Sprite):
     def __init__(self, image_id, pos_x, pos_y, x_offset=0, y_offset=0):
-        super().__init__(tiles_group, all_sprites, non_player)
+        super().__init__(tiles_group, all_sprites)
         self.image_id = image_id
         self.pos_x = pos_x
         self.pos_y = pos_y
@@ -19,7 +18,7 @@ class Tile(pygame.sprite.Sprite):
 
 class Decoration(pygame.sprite.Sprite):
     def __init__(self, image_id, pos_x, pos_y, casts_shadows=False):
-        super().__init__(decorations, all_sprites, sort_by_y, non_player)
+        super().__init__(decorations, all_sprites, sort_by_y)
         self.image_id = image_id
         self.pos_x = pos_x
         self.pos_y = pos_y

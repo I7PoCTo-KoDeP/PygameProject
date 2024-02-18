@@ -4,7 +4,7 @@ import sys
 import json
 
 
-def load_image(name, colorkey=None):
+def load_image(name, colorkey=None):                # Function which loads images.
     fullname = os.path.join('data/sprites', name)
     if not os.path.isfile(fullname):
         print(f"Файл с изображением '{fullname}' не найден")
@@ -20,7 +20,17 @@ def load_image(name, colorkey=None):
     return image
 
 
-def clamp(min_value, max_value, value):
+def cut_sheet(sheet, columns, rows):
+    frames = []
+    rect = pygame.Rect(0, 0, sheet.get_width() // columns, sheet.get_height() // rows)
+    for j in range(rows):
+        for i in range(columns):
+            frame_location = (rect.w * i, rect.h * j)
+            frames.append(sheet.subsurface(pygame.Rect(frame_location, rect.size)))
+    return frames
+
+
+def clamp(min_value, max_value, value):             # Function which returns "clamped" value
     if min_value <= value <= max_value:
         return value
     elif min_value > value:
@@ -29,7 +39,7 @@ def clamp(min_value, max_value, value):
         return max_value
 
 
-def load_map(path):
+def load_map(path):                                 # Function which loads level from .json
     with open(path, 'r', encoding='utf-8') as map_file:
         objects = []
         file = map_file.read()
@@ -44,6 +54,12 @@ def load_map(path):
                 obj += ', '.join(i for i in args) + ')'
                 objects.append(obj)
         return objects
+
+
+def play_music(path, loop, volume):
+    pygame.mixer.music.load(path)
+    pygame.mixer.music.play(loop)
+    pygame.mixer.music.set_volume(volume)
 
 
 def terminate():

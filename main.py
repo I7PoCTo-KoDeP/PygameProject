@@ -2,14 +2,14 @@ import pygame
 
 from opengl_render_pipeline import PostProcessing
 from initialization import screen, size, ground_layer, shadows_layer, sunshafts_layer, objects_layer
-from sprites import all_sprites, tiles_group, sort_by_y, shadow_casters, save_group, non_player
+from sprites import all_sprites, tiles_group, sort_by_y, shadow_casters, save_group
 from constants import *
 from player import Player
 from camera import Camera
 from global_lightning import GodRays
 from save_module import save, load_save
-from help_functions import clear_layer, load_map
-from menus import MainMenu
+from help_functions import clear_layer, load_map, play_music
+from start_screen import StartScreen
 from scene_objects import Tile, Decoration
 
 
@@ -23,7 +23,7 @@ if __name__ == '__main__':
     running = True
     clock = pygame.time.Clock()
 
-    main_menu = MainMenu(clock, True)
+    start_screen = StartScreen(clock, with_splash=True)
 
     objects = load_map('maps/game_map.json')
     for i in objects:
@@ -37,10 +37,10 @@ if __name__ == '__main__':
 
     god_rays.create_god_rays(shadow_casters)
 
-    direction = [0, 0]
+    play_music('data/music/dragonship.mp3', -1, MASTER_VOLUME.get())
 
     while running:
-        time += 0.05
+        time += 0.01
         clear_layer(screen)
 
         for event in pygame.event.get():
@@ -49,9 +49,10 @@ if __name__ == '__main__':
             if event.type == pygame.KEYDOWN:
                 if pygame.key.get_pressed()[pygame.K_ESCAPE]:
                     save(save_group)
-                    main_menu = MainMenu(clock, False)
+                    main_menu = StartScreen(clock)
+                    play_music('data/music/dragonship.mp3', -1, MASTER_VOLUME.get())
 
-        player.move(PLAYER_MAX_SPEED, PLAYER_START_SPEED)
+        player.move(PLAYER_MAX_SPEED, PLAYER_START_SPEED, time)
 
         camera.update(player)
         for sprite in all_sprites:
