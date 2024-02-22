@@ -15,4 +15,4 @@ class Camera:
     def update(self, target):
         heading = target.position - self.position
         self.position += heading * self.speed
-        self.offset = (Vector2(self.screen_size[0] / 2, self.screen_size[1] / 2) - self.position) * self.speed / 2
+        self.offset = (Vector2(self.screen_size[0] / 2, self.screen_size[1] / 2) - self.position) * self.speed // 2

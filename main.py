@@ -2,7 +2,7 @@ import pygame
 
 from opengl_render_pipeline import PostProcessing
 from initialization import screen, size, ground_layer, shadows_layer, sunshafts_layer, objects_layer
-from sprites import all_sprites, tiles_group, sort_by_y, shadow_casters, save_group
+from sprites import all_sprites, tiles_group, sort_by_y, shadow_casters, save_group, decorations
 from constants import *
 from player import Player
 from camera import Camera
@@ -37,7 +37,7 @@ if __name__ == '__main__':
 
     god_rays.create_god_rays(shadow_casters)
 
-    play_music('data/music/dragonship.mp3', -1, MASTER_VOLUME.get())
+    play_music('data/music/let-go.mp3', -1, MASTER_VOLUME.get())
 
     while running:
         time += 0.01
@@ -50,7 +50,7 @@ if __name__ == '__main__':
                 if pygame.key.get_pressed()[pygame.K_ESCAPE]:
                     save(save_group)
                     main_menu = StartScreen(clock)
-                    play_music('data/music/dragonship.mp3', -1, MASTER_VOLUME.get())
+                    play_music('data/music/let-go.mp3', -1, MASTER_VOLUME.get())
 
         player.move(PLAYER_MAX_SPEED, PLAYER_START_SPEED, time)
 

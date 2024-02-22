@@ -69,3 +69,21 @@ def terminate():
 
 def clear_layer(layer):
     layer.fill((255, 255, 255, 0))
+
+
+def collide(rect1, rect2):
+    if rect1.x == min(rect1.x, rect2.x):
+        left = rect1.x
+        width = rect1.w
+    else:
+        left = rect2.x
+        width = rect2.w
+    if rect1.y == min(rect1.y, rect2.y):
+        bottom = rect1.y
+        height = rect1.h
+    else:
+        bottom = rect2.y
+        height = rect2.h
+    if left + width > max(rect1.x, rect2.x) and bottom + height > max(rect1.y, rect2.y):
+        return True
+    return False

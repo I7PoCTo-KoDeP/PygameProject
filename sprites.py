@@ -2,6 +2,11 @@ import pygame
 from help_functions import load_image
 
 
+class Sprite(pygame.sprite.Sprite):
+    def __init__(self, groups, position):
+        super().__init__(*groups)
+
+
 class SortingByY(pygame.sprite.Group):
     def by_y(self, sprite):
         return sprite.rect.y + sprite.sprite_y

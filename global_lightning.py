@@ -81,10 +81,6 @@ class GodRays:
             img = self.shaders[n].render(create_texture=True)
             img.set_colorkey((0, 0, 0))
             self.depth_map.blit(img, (i.rect.x, i.rect.y))
-            #self.depth_map.blit(shadows, (0, 0))
-            #color = pygame.Surface(size, pygame.SRCALPHA)
-            #color.fill((0, 0, 0))
-            #self.depth_map.blit(color, (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
 
     def render(self):
         self.depth_map.fill((0, 0, 0, 0))

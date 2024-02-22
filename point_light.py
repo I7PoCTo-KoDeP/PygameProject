@@ -6,4 +6,7 @@ from initialization import screen
 
 class PointLight:
     # TODO: point light, spot light
-    pass
+    def __init__(self, position, radius, brightness):
+        self.position = position
+        self.radius = radius
+        self.brightness = brightness

@@ -4,7 +4,7 @@ from math import exp
 from sprites import (player_group, all_sprites, player_image, shadow_casters, sort_by_y, save_group, decorations,
                      player_run)
 from global_lightning import ShadowCaster
-from help_functions import clamp, cut_sheet
+from help_functions import clamp, cut_sheet, collide
 from constants import GLOBAL_LIGHTNING_ANGLE
 
 
@@ -12,7 +12,9 @@ class Player(pygame.sprite.Sprite):
     def __init__(self, pos_x, pos_y, casts_shadows=True):
         super().__init__(player_group, all_sprites, shadow_casters, sort_by_y, save_group)
         self.image = player_image
+        self.size = player_image.get_width(), player_image.get_height()
         self.rect = self.image.get_rect().move(pos_x, pos_y)
+        self.collider = pygame.Rect(pos_x - 22, pos_y - 15, 36, 65)
         self.current_speed = 0
         self.sprite_y = self.image.get_rect().bottom
         self.flipped = False
@@ -21,7 +23,6 @@ class Player(pygame.sprite.Sprite):
         self.run_frames = cut_sheet(player_run, 13, 1)
         self.idle_frames = player_image
         self.cur_frame = 0
-        self.center = (self.image.get_width() // 2, 0)
         if casts_shadows:
             self.shadow_caster = ShadowCaster(self.image, GLOBAL_LIGHTNING_ANGLE)
 
@@ -48,12 +49,17 @@ class Player(pygame.sprite.Sprite):
         self.rect.y += self.current_speed * direction_y
         self.world_coordinates[0] += self.current_speed * direction_x
         self.world_coordinates[1] += self.current_speed * direction_y
+        self.collider.x += self.current_speed * direction_x
+        self.collider.y += self.current_speed * direction_y
         for i in decorations:
-            if pygame.sprite.collide_mask(self, i):
+            if collide(self.collider, i.collider):
                 self.rect.x -= self.current_speed * direction_x
                 self.rect.y -= self.current_speed * direction_y
                 self.world_coordinates[0] -= self.current_speed * direction_x
                 self.world_coordinates[1] -= self.current_speed * direction_y
+                self.collider.x -= self.current_speed * direction_x
+                self.collider.y -= self.current_speed * direction_y
+
         self.shadow_caster.setup_new_image(self.image)
 
     def calculate_speed(self, max_speed, smoothness, exp_pow=1):
@@ -61,6 +67,7 @@ class Player(pygame.sprite.Sprite):
         return speed
 
     def stop(self, acceleration):
+        self.cur_frame = 0
         self.current_speed = acceleration
 
     def get_direction(self):
