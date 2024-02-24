@@ -11,6 +11,11 @@ class Camera:
     def apply(self, obj):
         obj.rect.x += self.offset.x
         obj.rect.y += self.offset.y
+        try:
+            obj.collider.x += self.offset.x
+            obj.collider.y += self.offset.y
+        except AttributeError as e:
+            pass
 
     def update(self, target):
         heading = target.position - self.position

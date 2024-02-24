@@ -1,8 +1,9 @@
 import pygame
+
 from sprites import tiles_group, all_sprites, tile_images, decoration_images, decorations, sort_by_y, shadow_casters
 from constants import TILE_WIDTH, TILE_HEIGHT, GLOBAL_LIGHTNING_ANGLE
 from global_lightning import ShadowCaster
-from initialization import screen
+from opengl_render_pipeline import Shader
 
 
 class Tile(pygame.sprite.Sprite):
@@ -27,7 +28,6 @@ class Decoration(pygame.sprite.Sprite):
         self.sprite_y = self.image.get_rect().bottom
         self.mask = pygame.mask.from_surface(self.image)
         self.collider = self.create_collider()
-        self.offset = (0, )
         if casts_shadows:
             self.shadow_caster = ShadowCaster(self.image, GLOBAL_LIGHTNING_ANGLE)
             shadow_casters.add(self)
@@ -38,21 +38,13 @@ class Decoration(pygame.sprite.Sprite):
         for i in range(len(pixels)):
             for j in range(len(pixels[0])):
                 if pixels[i, j] != 0:
-                    left = j if j < left else left
-                    right = j if j > right else right
-                    top = i if i < top else top
-                    bottom = i if i > bottom else bottom
-        collider = pygame.Rect(self.rect.x + left, self.rect.y, right - left, self.rect.h)
-        self.offset = (left, )
+                    left = i if i < left else left
+                    right = i if i > right else right
+                    top = j if j < top else top
+                    bottom = j if j > bottom else bottom
+        collider = pygame.Rect(self.rect.x + left, self.rect.y + 2 / 3 * self.rect.h, right - left, self.rect.h // 3)
         return collider
 
-    def update_collider(self):
-        print(self.rect)
-        print(self.collider)
-        self.collider.x = self.rect.x + self.offset[0]
-        self.collider.y = self.rect.y
-
     def update(self):
-        self.update_collider()
         if self.casts_shadows:
             self.shadow_caster.cast_shadow(self.rect.x, self.rect.y)

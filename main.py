@@ -1,7 +1,7 @@
 import pygame
 
-from opengl_render_pipeline import PostProcessing
-from initialization import screen, size, ground_layer, shadows_layer, sunshafts_layer, objects_layer
+from opengl_render_pipeline import PostProcessing, Shader
+from initialization import screen, size, ground_layer, shadows_layer, sunshafts_layer, objects_layer, dev_mode
 from sprites import all_sprites, tiles_group, sort_by_y, shadow_casters, save_group, decorations
 from constants import *
 from player import Player
@@ -68,6 +68,12 @@ if __name__ == '__main__':
         screen.blit(objects_layer, (0, 0))
         # god_rays.render_depth_map(shadow_casters)
         # screen.blit(god_rays.depth_map, (0, 0))
+
+        # Visualise colliders
+        if dev_mode:
+            pygame.draw.rect(screen, (0, 128, 0), player.collider, width=2)
+            for i in decorations:
+                pygame.draw.rect(screen, (0, 128, 0), i.collider, width=2)
 
         # Post-Processing
         # shader_data = {'TIME': time}

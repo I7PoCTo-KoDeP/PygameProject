@@ -14,7 +14,7 @@ class Player(pygame.sprite.Sprite):
         self.image = player_image
         self.size = player_image.get_width(), player_image.get_height()
         self.rect = self.image.get_rect().move(pos_x, pos_y)
-        self.collider = pygame.Rect(pos_x - 22, pos_y - 15, 36, 65)
+        self.collider = pygame.Rect(pos_x + 22, pos_y + 160 // 3, 36, 80 // 3)
         self.current_speed = 0
         self.sprite_y = self.image.get_rect().bottom
         self.flipped = False

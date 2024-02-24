@@ -7,6 +7,8 @@ from initialization import shadows_layer, sunshafts_layer, size
 class ShadowCaster:
     def __init__(self, image, angle):
         self.angle = angle
+        self.shader = Shader('shaders/Shadow.vert', 'shaders/Shadow.frag',
+                             size=(image.get_width() * 4, image.get_height() * 4), data={'in_angle': angle})
         self.shadow = self.make_shadow(image, self.angle)
 
     def setup_new_image(self, new_image):
@@ -23,9 +25,9 @@ class ShadowCaster:
         upscale_image = pygame.Surface((image.get_width() * 4, image.get_height() * 4))
         upscale_image.blit(image, (image.get_width() * 2, image.get_height() * 3))
 
-        shader = Shader('shaders/Shadow.vert', 'shaders/Shadow.frag', upscale_image, data={'in_angle': angle})
+        # shader = Shader('shaders/Shadow.vert', 'shaders/Shadow.frag', upscale_image, data={'in_angle': angle})
 
-        img = shader.render()
+        img = self.shader.render(image=upscale_image, create_texture=True)
         img.set_colorkey((0, 0, 0))
 
         return img
