@@ -11,9 +11,13 @@ class Camera:
     def apply(self, obj):
         obj.rect.x += self.offset.x
         obj.rect.y += self.offset.y
+        try:
+            obj.collider.x += self.offset.x
+            obj.collider.y += self.offset.y
+        except AttributeError as e:
+            pass
 
     def update(self, target):
         heading = target.position - self.position
         self.position += heading * self.speed
-        self.offset = (Vector2(self.screen_size[0] / 2, self.screen_size[1] / 2) - self.position) * self.speed
-
+        self.offset = (Vector2(self.screen_size[0] / 2, self.screen_size[1] / 2) - self.position) * self.speed // 2

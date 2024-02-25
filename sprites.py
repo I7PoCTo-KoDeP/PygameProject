@@ -2,6 +2,11 @@ import pygame
 from help_functions import load_image
 
 
+class Sprite(pygame.sprite.Sprite):
+    def __init__(self, groups, position):
+        super().__init__(*groups)
+
+
 class SortingByY(pygame.sprite.Group):
     def by_y(self, sprite):
         return sprite.rect.y + sprite.sprite_y
@@ -21,7 +26,6 @@ player_group = pygame.sprite.Group()
 shadow_casters = pygame.sprite.Group()
 decorations = pygame.sprite.Group()
 save_group = pygame.sprite.Group()
-non_player = pygame.sprite.Group()
 
 tile_images = {
     0: load_image('tile2.png'),
@@ -33,3 +37,4 @@ decoration_images = {
     2: load_image('tree.png')
 }
 player_image = load_image('MainCharacter.png')
+player_run = load_image('MainCharacter_run.png')

@@ -41,7 +41,7 @@ class Shader:
             self.framebuffer = self.ctx.simple_framebuffer(self.img.get_size(), 4)
             self.texture = surface_to_texture(self.ctx, self.img)
         else:
-            self.framebuffer = self.ctx.simple_framebuffer(size, 3)
+            self.framebuffer = self.ctx.simple_framebuffer(size, 4)
         self.program = self.ctx.program(vertex_shader=vertex_shader, fragment_shader=fragment_shader)
         self.render_object = self.ctx.vertex_array(self.program,
                                                    [(self.quad_buffer, '2f 2f', 'vertexPos', 'vertexTexCoord')])
