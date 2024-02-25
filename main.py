@@ -1,8 +1,8 @@
 import pygame
 
 from opengl_render_pipeline import PostProcessing, Shader
-from initialization import screen, size, ground_layer, shadows_layer, sunshafts_layer, objects_layer, dev_mode
-from sprites import all_sprites, tiles_group, sort_by_y, shadow_casters, save_group, decorations
+from initialization import *
+from sprites import all_sprites, tiles_group, sort_by_y, shadow_casters, save_group, decorations, light_sources
 from constants import *
 from player import Player
 from camera import Camera
@@ -10,6 +10,7 @@ from global_lightning import GodRays
 from save_module import save, load_save
 from help_functions import clear_layer, load_map, play_music
 from start_screen import StartScreen
+from point_light import PointLight
 from scene_objects import Tile, Decoration
 
 
@@ -63,13 +64,15 @@ if __name__ == '__main__':
         # Frame Formation
         sort_by_y.draw(objects_layer)
         tiles_group.draw(ground_layer)
+        light_sources.draw(light_layer)
         screen.blit(ground_layer, (0, 0))
         screen.blit(shadows_layer, (0, 0))
         screen.blit(objects_layer, (0, 0))
+        screen.blit(light_layer, (0, 0))
         # god_rays.render_depth_map(shadow_casters)
         # screen.blit(god_rays.depth_map, (0, 0))
 
-        # Visualise colliders
+        # Visualise colliders and show FPS
         if dev_mode:
             font = pygame.font.Font(None, 20)
             fps = font.render(str(round(clock.get_fps())), True, (0, 0, 0))
@@ -87,6 +90,7 @@ if __name__ == '__main__':
         # Clearing
         clear_layer(ground_layer)
         clear_layer(objects_layer)
+        clear_layer(light_layer)
         shadows_layer.fill((1, 1, 1, 0))
         # Screen Rendering
         sc_shader.render()

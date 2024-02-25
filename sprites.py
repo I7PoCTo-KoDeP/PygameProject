@@ -3,6 +3,7 @@ from help_functions import load_image
 
 
 class Sprite(pygame.sprite.Sprite):
+    # TODO: Parent class for sprites.
     def __init__(self, groups, position):
         super().__init__(*groups)
 
@@ -26,6 +27,7 @@ player_group = pygame.sprite.Group()
 shadow_casters = pygame.sprite.Group()
 decorations = pygame.sprite.Group()
 save_group = pygame.sprite.Group()
+light_sources = pygame.sprite.Group()
 
 tile_images = {
     0: load_image('tile2.png'),

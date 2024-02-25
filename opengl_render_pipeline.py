@@ -4,6 +4,7 @@ import pygame
 
 
 class OpenGLRenderPipeline:
+    """Creates RenderPipeline"""
     def __init__(self, size, scale=1):
         pygame.init()
         self.screen_size = size[0] * scale, size[1] * scale
@@ -13,17 +14,20 @@ class OpenGLRenderPipeline:
         self.ctx.enable(moderngl.BLEND)
         self.ctx.blend_func = self.ctx.SRC_ALPHA, self.ctx.ONE_MINUS_SRC_ALPHA
 
-    def get_screen(self):
+    def get_screen(self) -> pygame.Surface:
+        """Returns screen where you can draw."""
         return self.display
 
     def get_screen_texture(self):
         return self.screen
 
-    def create_texture(self, img):
-        return surface_to_texture(self.ctx, img)
+    def create_texture(self, surface: pygame.Surface) -> moderngl.Texture:
+        """Create texture from pygame surface"""
+        return surface_to_texture(self.ctx, surface)
 
 
 class Shader:
+    """Create shader"""
     def __init__(self, vertex_shader='', fragment_shader='', sprite=None, size=None, data=None):
         vertex_shader = file_reader(vertex_shader)
         fragment_shader = file_reader(fragment_shader)
@@ -52,7 +56,8 @@ class Shader:
             for key, val in self.shader_data.items():
                 self.program[key] = val
 
-    def render(self, image=None, create_texture=False):
+    def render(self, image=None, create_texture=False) -> pygame.Surface:
+        """Renders texture and returns pygame.Surface"""
         if image is not None:
             self.img = image
         if create_texture:
@@ -74,6 +79,7 @@ class Shader:
 
 
 class PostProcessing:
+    """Class for post-processing. Shader for screen."""
     def __init__(self, screen_size, display, vertex_shader='', fragment_shader=''):
         vertex_shader = file_reader(vertex_shader)
         fragment_shader = file_reader(fragment_shader)
