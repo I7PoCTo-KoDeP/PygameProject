@@ -19,7 +19,7 @@ class Tile(pygame.sprite.Sprite):
 
 
 class Decoration(pygame.sprite.Sprite):
-    def __init__(self, image_id, pos_x, pos_y, casts_shadows=False):
+    def __init__(self, image_id, pos_x, pos_y, casts_shadows=False, foliage=False):
         super().__init__(decorations, all_sprites, sort_by_y)
         self.image_id = image_id
         self.casts_shadows = casts_shadows
@@ -28,6 +28,11 @@ class Decoration(pygame.sprite.Sprite):
         self.sprite_y = self.image.get_rect().bottom
         self.mask = pygame.mask.from_surface(self.image)
         self.collider = self.create_collider()
+        self.time = 0
+        self.foliage = foliage
+        if self.foliage:
+            self.foliage_shader = Shader('shaders/FoliageShader.vert', 'shaders/FoliageShader.frag',
+                                         sprite=self.image, data={'time': 0})
         if casts_shadows:
             self.shadow_caster = ShadowCaster(self.image, GLOBAL_LIGHTNING_ANGLE)
             shadow_casters.add(self)
@@ -46,5 +51,10 @@ class Decoration(pygame.sprite.Sprite):
         return collider
 
     def update(self):
+        self.time += 0.01
+        if int(self.time * 100) % 2 == 0 and self.foliage:
+            self.foliage_shader.shader_data['time'] = self.time
+            self.image = self.foliage_shader.render(create_texture=True)
+            self.image.set_colorkey((0, 0, 0))
         if self.casts_shadows:
             self.shadow_caster.cast_shadow(self.rect.x, self.rect.y)

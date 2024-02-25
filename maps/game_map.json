@@ -3542,7 +3542,8 @@
       "image_id": "tree",
       "pos_x": 10,
       "pos_y": 10,
-      "casts_shadows": true
+      "casts_shadows": true,
+      "foliage": true
     }
   ]
 ]

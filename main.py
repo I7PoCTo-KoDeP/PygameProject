@@ -71,6 +71,9 @@ if __name__ == '__main__':
 
         # Visualise colliders
         if dev_mode:
+            font = pygame.font.Font(None, 20)
+            fps = font.render(str(round(clock.get_fps())), True, (0, 0, 0))
+            screen.blit(fps, (size[0] - 30, 10))
             pygame.draw.rect(screen, (0, 128, 0), player.collider, width=2)
             for i in decorations:
                 pygame.draw.rect(screen, (0, 128, 0), i.collider, width=2)
