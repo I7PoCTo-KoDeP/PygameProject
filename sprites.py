@@ -28,13 +28,13 @@ decorations = pygame.sprite.Group()
 save_group = pygame.sprite.Group()
 
 tile_images = {
-    0: load_image('tile2.png'),
-    1: load_image('tile1.png'),
+    0: load_image('Tile2.png'),
+    1: load_image('Tile1.png'),
 }
 decoration_images = {
-    0: load_image('tile3.png'),
-    1: load_image('stone_wall.png'),
-    2: load_image('tree.png')
+    0: load_image('Tile3.png'),
+    1: load_image('Stone_wall.png'),
+    2: load_image('Tree.png')
 }
 player_image = load_image('MainCharacter.png')
 player_run = load_image('MainCharacter_run.png')
