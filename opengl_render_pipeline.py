@@ -7,6 +7,7 @@ class OpenGLRenderPipeline:
     """Creates RenderPipeline"""
     def __init__(self, size, scale=1):
         pygame.init()
+        self.size = size
         self.screen_size = size[0] * scale, size[1] * scale
         self.screen = pygame.display.set_mode(self.screen_size, pygame.OPENGL | pygame.DOUBLEBUF)
         self.display = pygame.Surface(size)
@@ -17,6 +18,10 @@ class OpenGLRenderPipeline:
     def get_screen(self) -> pygame.Surface:
         """Returns screen where you can draw."""
         return self.display
+
+    def change_scale(self, scale):
+        self.screen_size = self.size[0] * scale, self.size[1] * scale
+        self.screen = pygame.display.set_mode(self.screen_size, pygame.OPENGL | pygame.DOUBLEBUF)
 
     def get_screen_texture(self):
         return self.screen

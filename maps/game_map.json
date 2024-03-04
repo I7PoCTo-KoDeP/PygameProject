@@ -3545,14 +3545,5 @@
       "casts_shadows": true,
       "foliage": true
     }
-  ],
-  [
-    {
-      "Class_name": "PointLight",
-      "position": [180, 59],
-      "radius": 40,
-      "brightness": 0.5,
-      "color": [255, 255, 255]
-    }
   ]
 ]

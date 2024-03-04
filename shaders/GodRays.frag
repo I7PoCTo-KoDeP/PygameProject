@@ -7,19 +7,19 @@ uniform vec2 SCREEN_UV;
 uniform sampler2D SCREEN_TEXTURE;
 
 uniform float TIME;
-uniform float angle = radians(45);
+uniform float angle = radians(0);
 uniform float position = 0;
 uniform float spread = 0.5;
 uniform float cutoff = 0.3;
 uniform float falloff = 0.6;
 uniform float edge_fade = 0.15;
 
-uniform float speed = 1.0;
+uniform float speed = 10.0;
 uniform float ray1_density = 8.0;
 uniform float ray2_density = 30.0;
 uniform float ray2_intensity = 0.3;
 
-uniform vec4 color = vec4(1.0, 0.9, 0.65, 0.5);
+uniform vec4 color = vec4(1.0, 0.9, 0.65, 0.2);
 
 //uniform bool hdr = false;
 uniform float seed = 5.0;

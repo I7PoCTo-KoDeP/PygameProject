@@ -10,7 +10,8 @@ from UI_elements import Button, Slider
 screen_shader = PostProcessing(size, screen, 'shaders/Screen.vert', 'shaders/Screen.frag')
 
 
-class StartScreen:                      # Manager Class
+class StartScreen:
+    """Manager class"""
     def __init__(self, clock, with_splash=False):
         self.main_menu = MainMenu(self)
         self.settings = SettingsMenu(self)
@@ -76,9 +77,11 @@ class MainMenu:
         self.main_menu_GUI.append(exit_button)
 
     def render(self):
+        background = load_image('Background.png')
         screen.fill((31, 206, 203))
         font = pygame.font.Font('data/fonts/agsfontsetserif1.ttf', 48)
-        string_rendered = font.render('The Last Traveler', 1, pygame.Color('black'))
+        string_rendered = font.render('The Last Traveler', 1, pygame.Color('white'))
+        screen.blit(background, (0, 0))
         screen.blit(string_rendered, (10, 10))
         for i in self.main_menu_GUI:
             i.set_active(True)

@@ -4,10 +4,11 @@ import sys
 import json
 
 
-def load_image(name, colorkey=None):                # Function which loads images.
+def load_image(name, colorkey=None) -> pygame.Surface:
+    """Function which loads sprites and return pygame.Surface"""
     fullname = os.path.join('data/sprites', name)
     if not os.path.isfile(fullname):
-        print(f"Файл с изображением '{fullname}' не найден")
+        print(f"The file '{fullname}' wasn't found")
         sys.exit()
     image = pygame.image.load(fullname)
     if colorkey is not None:
@@ -30,7 +31,8 @@ def cut_sheet(sheet, columns, rows):
     return frames
 
 
-def clamp(min_value, max_value, value):             # Function which returns "clamped" value
+def clamp(min_value, max_value, value) -> float:
+    """Function, which returns clamped value"""
     if min_value <= value <= max_value:
         return value
     elif min_value > value:
