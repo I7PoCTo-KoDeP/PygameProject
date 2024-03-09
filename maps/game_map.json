@@ -3532,16 +3532,33 @@
   [
     {
       "Class_name": "Decoration",
-      "image_id": "stone_wall",
+      "image_id": "tree",
       "pos_x": 180,
       "pos_y": 59,
-      "casts_shadows": true
+      "casts_shadows": true,
+      "foliage": true
     },
     {
       "Class_name": "Decoration",
       "image_id": "tree",
       "pos_x": 10,
       "pos_y": 10,
+      "casts_shadows": true,
+      "foliage": true
+    },
+    {
+      "Class_name": "Decoration",
+      "image_id": "tree",
+      "pos_x": 120,
+      "pos_y": 150,
+      "casts_shadows": true,
+      "foliage": true
+    },
+    {
+      "Class_name": "Decoration",
+      "image_id": "tree",
+      "pos_x": 10,
+      "pos_y": 200,
       "casts_shadows": true,
       "foliage": true
     }

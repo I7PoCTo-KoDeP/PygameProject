@@ -33,7 +33,7 @@ class OpenGLRenderPipeline:
 
 class Shader:
     """Create shader"""
-    def __init__(self, vertex_shader='', fragment_shader='', sprite=None, size=None, data=None):
+    def __init__(self, vertex_shader='', fragment_shader='', sprite=None, size=None, data=None, comp=4):
         vertex_shader = file_reader(vertex_shader)
         fragment_shader = file_reader(fragment_shader)
         self.ctx = moderngl.create_context()
@@ -47,14 +47,15 @@ class Shader:
         ]))
         if sprite is not None:
             self.img = sprite
-            self.framebuffer = self.ctx.simple_framebuffer(self.img.get_size(), 4)
+            self.framebuffer = self.ctx.simple_framebuffer(self.img.get_size(), comp)
             self.texture = surface_to_texture(self.ctx, self.img)
         else:
-            self.framebuffer = self.ctx.simple_framebuffer(size, 4)
+            self.framebuffer = self.ctx.simple_framebuffer(size, comp)
         self.program = self.ctx.program(vertex_shader=vertex_shader, fragment_shader=fragment_shader)
         self.render_object = self.ctx.vertex_array(self.program,
                                                    [(self.quad_buffer, '2f 2f', 'vertexPos', 'vertexTexCoord')])
         self.shader_data = data
+        self.comp = comp
 
     def send_data(self):
         if self.shader_data is not None:
@@ -73,7 +74,8 @@ class Shader:
         with scope:
             self.framebuffer.use()
             self.render_object.render(mode=moderngl.TRIANGLE_STRIP)
-            surface = pygame.image.frombuffer(self.framebuffer.read(components=4), self.img.get_size(), 'RGBA')
+            f = 'RGBA' if self.comp == 4 else 'RGB'
+            surface = pygame.image.frombuffer(self.framebuffer.read(components=self.comp), self.img.get_size(), f)
         scope.release()
         self.texture.release()
         return surface

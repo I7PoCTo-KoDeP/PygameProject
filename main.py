@@ -65,17 +65,19 @@ if __name__ == '__main__':
             i.render()
 
         # Frame Formation
-        sort_by_y.draw(objects_layer)
-        tiles_group.draw(ground_layer)
-        # light_sources.draw(light_layer)
-        screen.blit(ground_layer, (0, 0))
+        tiles_group.draw(screen)
         screen.blit(shadows_layer, (0, 0))
-        screen.blit(objects_layer, (0, 0))
-        god_rays.render_depth_map(shadow_casters)
-        screen.blit(god_rays.depth_map, (0, 0))
-        #screen.blit(light_layer, (0, 0))
+        sort_by_y.draw(screen)
+        # light_sources.draw(light_layer)
+        #screen.blit(ground_layer, (0, 0))
+        #screen.blit(objects_layer, (0, 0))
+        # screen.blit(light_layer, (0, 0))
 
         # Visualise colliders and show FPS
+        if show_fps:
+            font = pygame.font.Font(None, 20)
+            fps = font.render(str(round(clock.get_fps())), True, (0, 0, 0))
+            screen.blit(fps, (size[0] - 30, 10))
         if dev_mode:
             font = pygame.font.Font(None, 20)
             fps = font.render(str(round(clock.get_fps())), True, (0, 0, 0))
@@ -85,16 +87,14 @@ if __name__ == '__main__':
                 pygame.draw.rect(screen, (0, 128, 0), i.collider, width=2)
 
         # Post-Processing
-        #shader_data = {'TIME': time}
-        #god_rays.send_data_to_shader(shader_data)
-        #god_rays.render()
-        #screen.blit(sunshafts_layer, (0, 0))
+        shader_data = {'time': time}
+        god_rays.send_data_to_shader(shader_data)
+        god_rays.render()
+        screen.blit(god_rays.god_rays, (0, 0))
 
         # Clearing
-        clear_layer(ground_layer)
-        clear_layer(objects_layer)
         clear_layer(light_layer)
-        shadows_layer.fill((1, 1, 1, 0))
+        shadows_layer.fill((0, 0, 0, 0))
 
         # Screen Rendering
         sc_shader.render()
